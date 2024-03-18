@@ -1,0 +1,25 @@
+.about_aall{
+    padding: 0 5%;
+    margin-top: 70px;
+}
+
+.about_aall p{
+    margin-top: 15px;
+}
+.about_aall h2{
+    margin-top: 20px;
+    color: #2a4047
+}
+.about_aall h1{
+    text-transform: uppercase;
+    color: #2a4047
+}
+
+.about_aall ol{
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+.about_aall li{
+    margin-top: 10px;
+}

@@ -1,0 +1,459 @@
+.hero_all {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 0 5%;
+    background-image: url(../images/texture-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    background: linear-gradient(180deg, #2a4047 0%, #2a4047 100%);
+}
+
+.hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+}
+
+.hero_top {
+    color: rgb(240, 197, 65);
+    width: 100%;
+}
+
+.hero_top p {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.hero_middle {
+    color: #fff;
+    width: 100%;
+    padding-block: 15px;
+}
+
+.hero_middle h1 {
+    font-size: 65px;
+    opacity: 1;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero_bottom{
+    width: 100%;
+}
+
+.hero_bottom button{
+    padding: 15px 45px;
+    background-color: rgb(240, 197, 65);
+    color: #fff;
+    border: none;
+}
+.hero_bottom button a{
+    color: #fff;
+}
+.hero_cars_slide {
+    overflow: hidden;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+    display: inline-block;
+    border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+    background: rgb(240, 197, 65);
+    opacity: 20px;
+    height: 10px;
+    width: 30px;
+    border-radius: 20px;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #fff !important;
+    border-radius: 20px;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: #fff;
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+
+.reservation_boking_all {
+    margin-top: 70px;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 0 5%;
+}
+
+.forms input {
+    height: 50px;
+    padding-left: 5%;
+}
+
+.forms input:focus{
+    outline: none;
+}
+.forms select {
+    height: 50px;
+    padding-left: 5%;
+}
+.forms select:focus {
+    outline: none;
+}
+.forms button {
+    border: none;
+    height: 50px;
+    background-color: #2a4047;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.forms_all {
+    background-color: rgb(240, 197, 65);
+
+
+    padding-bottom: 30px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.forms_title {
+    padding-block: 15px;
+    background-color: #2a4047;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.about_us_all {
+    margin-left: 10%;
+}
+
+.about_us_all span {
+    color: rgb(240, 197, 65);
+}
+
+.about_us_all h1 {
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.about_text h4 {
+    text-transform: uppercase;
+}
+
+.about_p {
+    margin-top: 15px;
+}
+
+.about_btn {
+    margin-top: 30px;
+}
+
+.about_btn button {
+    height: 50px;
+    padding: 15px 45px;
+    border: none;
+
+    background-color: #2a4047;
+}
+
+.about_btn button a {
+    color: #fff;
+}
+
+
+.explore_our_cars_all {
+    background-color: #2a4047;
+    ;
+    margin-top: 70px;
+    padding-block: 50px;
+}
+
+.explore_title {
+    padding: 0 5%;
+    text-align: center;
+    color: #fff;
+}
+
+.explore_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 5%;
+}
+
+.explore_card {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+   
+    border-radius: 10px;
+    width: 95%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.explore_car_image {
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    height: 250px;
+    width: 100%;
+    background-color: #2a4047;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-image: url(../images/car-slide-1.png);
+    background-position: center;
+    background-size: cover;
+   
+}
+.explore_price{
+    margin-top: 10px;
+}
+
+.explore_price span{
+    font-size: 16px;
+}
+.explore_car_info{
+    display: flex;
+    justify-content: space-between;
+margin-top: 10px;
+}
+
+.explore_book button{
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #2a4047;
+    border-radius: 10px;
+    border: none;
+}
+
+.explore_book a{
+    color: #fff;
+    width: 100% !important;
+}
+
+.testiomonial_all{
+    margin-top: 70px;
+    padding: 0 5%;
+}
+
+.testimonial_title h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.testimonial_slide{
+
+    margin-top: 50px;
+}
+
+.testimonial_box{
+border: 1px dotted;
+padding: 0 5%;
+padding-block: 30px;
+text-align: left;
+}
+
+.why_all{
+    margin-top: 70px;
+        padding: 0 5%;
+        background-color: #2a4047;
+        /* height: 500px; */
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color:#fff;
+}
+.why_text{
+    padding-block: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.why_text h1{
+    width: 100%;
+}
+.why_text p{
+    margin-top: 20px;
+}
+.why_images{
+
+    background-image: url(../images/car-slide-1.png);
+        background-position: center;
+        background-size: cover;
+}
+
+.contact_all{
+margin-top: 70px;
+    padding: 0 5%;
+   
+}
+.contact_title h1{
+    text-align: center;
+    color: #2a4047;
+}
+.contact_boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box{
+    width: 90%;
+    background-color: #2a4047;
+    padding: 0 5%;
+    padding-block: 30px;
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.map{
+   
+    margin-top: 50px;
+}
+.map iframe{
+    width: 100%;
+        height: 500px;
+}
+
+@media only screen and (max-width: 1110px) {
+    .hero_all{
+        display: flex;
+        flex-direction: column;
+        padding-block: 30px;
+        height: 100%;
+    }
+    .hero_cars_slide{
+        margin-top: 50px;
+    }
+
+    .reservation_boking_all{
+        display: flex;
+            flex-direction: column;
+    }
+
+    .reservations_booking{
+        margin-bottom: 50px;
+    }
+    .about_us_all{
+        width: 100%;
+        margin: 0;
+    }
+    .explore_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .why_all{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .contact_boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .explore_grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contact_boxes{
+            display: grid;
+                grid-template-columns: 1fr;
+    }
+}

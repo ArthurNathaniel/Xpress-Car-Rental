@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.header_all {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a4047;
+    padding: 0 7%;
+    padding-block: 5px;
+}
+
+.motto span {
+    color: rgb(240, 197, 65);
+    padding-right: 15px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.motto p {
+    color: #fff;
+}
+
+.navbar_all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0 7%;
+    position: sticky;
+    top: 0;
+    z-index: 454;
+    padding-block: 5px;
+    width: 100%;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.logo {
+    height: 75px;
+    width: 150px;
+    border: 2px dotted;
+}
+
+.nav_links a {
+    padding: 15px;
+    color: #000;
+}
+
+.nav_links a:hover {
+    color: #2a4047;
+}
+
+.mobile a {
+    color: #000;
+}
+
+
+.social_media a {
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    background-color: #2a4047;
+    color: #fff;
+}
+
+
+.whatsapp_box {
+    z-index: 888;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    right: 30px;
+    position: fixed;
+    bottom: 20px;
+    background-color: #2a4047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.whatsapp_box a {
+    color: #fff;
+}
+
+#toggleButton {
+    display: none;
+    background-color: #2a4047;
+}
+
+.mobile {
+    display: none;
+}
+
+footer {
+    background-color: #2a4047;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+footer p {
+    color: #fff;
+}
+.hero_bg {
+    background-color: #2a4047;
+    height: 400px;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_bg h5 {
+    color: rgb(240, 197, 65);
+    text-align: center;
+}
+
+.hero_bg h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+}
+@media only screen and (max-width: 1110px) {
+  footer{
+    display: flex;
+    flex-direction: column;
+    padding-block: 20px;
+  }
+
+  .copyright{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+    .header_all {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+
+
+    #toggleButton {
+        display: block;
+        background-color: #2a4047;
+        border: none;
+        padding: 15px;
+        color: #fff;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .mobile {
+        position: absolute;
+        top: 90px;
+        z-index: 4554;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    .mobile a {
+        border-top: 2px solid #534f4f2a;
+        width: 100%;
+        padding: 0 10%;
+        padding-block: 20px;
+    }
+
+
+
+    .whatsapp_box a {
+        color: #fff;
+    }
+
+
+
+
+}
