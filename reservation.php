@@ -15,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Validate pickup and return dates (e.g., check if return date is after pickup date)
         if ($pickup_date >= $return_date) {
             echo "Return date must be after pickup date.";
+            
             exit();
         }
 
@@ -26,7 +27,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $result = $stmt->get_result();
 
         if ($result->num_rows > 0) {
-            echo "The selected car is not available for the specified period.";
+            echo "";
+            echo "<script>alert('The selected car is not available for the specified period.'); window.location.href = 'booking.php';</script>";
+
             exit();
         }
 
@@ -78,18 +81,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservation - Xpress Car Rental</title>
-    <?php include '../cdn.php'; ?>
-    <link rel="stylesheet" href="../css/sidebar.css">
+    <?php include 'cdn.php'; ?>
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- <link rel="stylesheet" href="../css/sidebar.css"> -->
     <link rel="stylesheet" href="../css/admin.css">
 </head>
 
 <body>
+    <?php include 'navbar.php'; ?>
+    <section>
+        <div class="hero_bg">
+            <h5>XPRESS CAR RENTAL</h5>
+            <h1>Make A Reservation</h1>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
     <div class="admin_all">
 
         <form method="post" action="">
-            <div class="forms">
-                <h2>Car Rental Booking</h2>
+            <div class="forms_title">
+                <h2>XPRESS CAR RENTAL</h2>
             </div>
+            <br>
             <div class="forms">
                 <label> Pickup Location:</label>
                 <select name="pickup_location">
@@ -99,12 +115,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             </div>
 
-            <div class="forms">
-                <span id="desired_location_input" style="display: none;">
-                    <label>Desired Location: </label>
-                    <input type="text" name="desired_location"><br>
-                </span>
+
+            <div id="desired_location_input" style="display: none;">
+                <label>Desired Location: </label>
+                <br>
+                <input type="text" placeholder="Enter your desired location" name="desired_location"><br>
             </div>
+
 
             <div class="forms">
                 <label> Pickup Date:</label>
@@ -122,7 +139,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if ($result->num_rows > 0) {
                     echo "Select Car: <select name='car_id'>";
                     while ($row = $result->fetch_assoc()) {
-                        echo "<option value='" . $row['id'] . "'>" . $row['name'] . " (" . $row['model'] . " - " . $row['transmission'] . ")</option>";
+                        // echo "<option value='" . $row['id'] . "'>" . $row['car_name'] . " (" . $row['model'] . " - " . $row['transmission'] . ")</option>";
+                        echo "<option value='" . $row['id'] . "'>" . $row['car_name'] . " (" . $row['model'] . " - " . $row['transmission'] .  " - " . $row['price'] . ")</option>";
+
                     }
                     echo "</select><br>";
                 } else {
@@ -131,12 +150,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 ?>
             </div>
             <div class="forms">
-                <button type="submit">Submit booking</button>
+                <button type="submit">MAKE A RESERVATION</button>
             </div>
-            
+
         </form>
     </div>
 
+
+    <?php include 'footer.php' ?>
     <script>
         document.querySelector("select[name=pickup_location]").addEventListener("change", function() {
             var desiredLocationInput = document.getElementById("desired_location_input");
@@ -147,6 +168,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         });
     </script>
+    <script src="./js/navbar.js"></script>
 </body>
 
 </html>

@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add A Car - Xpress Car Rental</title>
-    <?php include '../cdn.php'; ?>
+    <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="../css/sidebar.css">
     <link rel="stylesheet" href="../css/admin.css">
 </head>
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="forms">
                 <label>Car Name:</label>
-                <input type="text" placeholder="Enter the car name" name="name" required>
+                <input type="text" placeholder="Enter the car name" name="car_name" required>
             </div>
             <div class="forms">
                 <label>Model: </label>

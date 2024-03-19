@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Xpress Car Rental</title>
+    <title>Home - Ogazy Car Rental</title>
     <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -53,17 +53,48 @@
     <section>
         <div class="reservation_boking_all">
             <div class="reservation_bg">
-                <?php include 'booking.php' ?>
+                <?php include'booking.php'?>
+                <!-- <form action="">
+                    <div class="forms_all">
+                        <div class="forms_title">
+                            <h1>Ogazy CAR RENTAL</h1>
+                        </div>
+                        <div class="forms">
+                            <label>Pick Up Location:</label>
+                            <select name="pickup" id="pickup" required>
+                                <option value="Office">Main Office</option>
+                                <option value="Ypur_Location">Your Location</option>
+                            </select>
+                        </div>
+                        <div class="forms">
+                            <label>Pickup Date:</label>
+                            <input type="date" placeholder="Select Pickup Date" required />
+                        </div>
+                        <div class="forms">
+                            <label>Return Date:</label>
+                            <input type="date" placeholder="Select Return Date" required />
+                        </div>
+                        <div class="forms">
+                            <label>Available Cars:</label>
+                            <select name="car" id="cars" required>
+                                <option value="camry">Camry</option>
+                                <option value="vitz">Vitz</option>
+                            </select>
+                        </div>
+                        <div class="forms">
+                            <button type="submit">make a reservation</button>
+                        </div>
+                    </div>
+                </form> -->
             </div>
-
             <div class="about_us_all">
                 <div class="about_text">
-                    <h4>About us - <span>Xpress Car Rentals</span></h4>
+                    <h4>About us - <span>Ogazy Car Rentals</span></h4>
                     <h1>We are Providing Best Car Rental Services</h1>
                 </div>
                 <div class="about_p">
                     <p>
-                        Welcome to Xpress Car Rental, your premier destination for reliable and affordable vehicle rentals. At Xpress, we pride ourselves on offering top-notch customer service and a wide selection of vehicles to meet your transportation needs. </p>
+                        Welcome to Ogazy Car Rental, your premier destination for reliable and affordable vehicle rentals. At Ogazy, we pride ourselves on offering top-notch customer service and a wide selection of vehicles to meet your transportation needs. </p>
                 </div>
                 <div class="about_p">
                     <p>
@@ -75,7 +106,7 @@
                 </div>
                 <div class="about_btn">
                     <button>
-                        <a href="about.php">Read more</a>
+                        <a href="#">Read more</a>
                     </button>
                 </div>
             </div>
@@ -112,7 +143,7 @@
                         </div>
                         <div class="explore_book">
                             <button>
-                                <a href="reservation.php">MAKE RESERVATION</a>
+                                <a href="#">MAKE RESERVATION</a>
                             </button>
                         </div>
                     </div>
@@ -142,101 +173,7 @@
                         </div>
                         <div class="explore_book">
                             <button>
-                                <a href="reservation.php">MAKE RESERVATION</a>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="explore_card">
-                    <div class="explore_car_image">
-
-                    </div>
-                    <div class="explore_details">
-                        <div class="explore_car_title">
-                            <h3>Honda Accord 5 Seater Car</h3>
-                        </div>
-                        <div class="explore_price">
-                            <h2>GHC 1000 <span>/day</span></h2>
-                        </div>
-                        <div class="explore_car_info">
-                            <div class="transmission">
-                                <p>20K</p>
-                            </div>
-                            <div class="transmission">
-                                <p>Auto</p>
-                            </div>
-                            <div class="transmission">
-                                <p>Petrol</p>
-                            </div>
-                        </div>
-                        <div class="explore_book">
-                            <button>
-                                <a href="reservation.php">MAKE RESERVATION</a>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="explore_card">
-                    <div class="explore_car_image">
-
-                    </div>
-                    <div class="explore_details">
-                        <div class="explore_car_title">
-                            <h3>Honda Accord 5 Seater Car</h3>
-                        </div>
-                        <div class="explore_price">
-                            <h2>GHC 1000 <span>/day</span></h2>
-                        </div>
-                        <div class="explore_car_info">
-                            <div class="transmission">
-                                <p>20K</p>
-                            </div>
-                            <div class="transmission">
-                                <p>Auto</p>
-                            </div>
-                            <div class="transmission">
-                                <p>Petrol</p>
-                            </div>
-                        </div>
-                        <div class="explore_book">
-                            <button>
-                                <a href="reservation.php">MAKE RESERVATION</a>
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="explore_card">
-                    <div class="explore_car_image">
-
-                    </div>
-                    <div class="explore_details">
-                        <div class="explore_car_title">
-                            <h3>Honda Accord 5 Seater Car</h3>
-                        </div>
-                        <div class="explore_price">
-                            <h2>GHC 1000 <span>/day</span></h2>
-                        </div>
-                        <div class="explore_car_info">
-                            <div class="transmission">
-                                <p>20K</p>
-                            </div>
-                            <div class="transmission">
-                                <p>Auto</p>
-                            </div>
-                            <div class="transmission">
-                                <p>Petrol</p>
-                            </div>
-                        </div>
-                        <div class="explore_book">
-                            <button>
-                                <a href="reservation.php">MAKE RESERVATION</a>
-
+                                <a href="#">MAKE RESERVATION</a>
                             </button>
                         </div>
                     </div>
@@ -267,8 +204,97 @@
                         </div>
                         <div class="explore_book">
                             <button>
-                                <a href="reservation.php">MAKE RESERVATION</a>
+                                <a href="#">MAKE RESERVATION</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="explore_card">
+                    <div class="explore_car_image">
 
+                    </div>
+                    <div class="explore_details">
+                        <div class="explore_car_title">
+                            <h3>Honda Accord 5 Seater Car</h3>
+                        </div>
+                        <div class="explore_price">
+                            <h2>GHC 1000 <span>/day</span></h2>
+                        </div>
+                        <div class="explore_car_info">
+                            <div class="transmission">
+                                <p>20K</p>
+                            </div>
+                            <div class="transmission">
+                                <p>Auto</p>
+                            </div>
+                            <div class="transmission">
+                                <p>Petrol</p>
+                            </div>
+                        </div>
+                        <div class="explore_book">
+                            <button>
+                                <a href="#">MAKE RESERVATION</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="explore_card">
+                    <div class="explore_car_image">
+
+                    </div>
+                    <div class="explore_details">
+                        <div class="explore_car_title">
+                            <h3>Honda Accord 5 Seater Car</h3>
+                        </div>
+                        <div class="explore_price">
+                            <h2>GHC 1000 <span>/day</span></h2>
+                        </div>
+                        <div class="explore_car_info">
+                            <div class="transmission">
+                                <p>20K</p>
+                            </div>
+                            <div class="transmission">
+                                <p>Auto</p>
+                            </div>
+                            <div class="transmission">
+                                <p>Petrol</p>
+                            </div>
+                        </div>
+                        <div class="explore_book">
+                            <button>
+                                <a href="#">MAKE RESERVATION</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="explore_card">
+                    <div class="explore_car_image">
+
+                    </div>
+                    <div class="explore_details">
+                        <div class="explore_car_title">
+                            <h3>Honda Accord 5 Seater Car</h3>
+                        </div>
+                        <div class="explore_price">
+                            <h2>GHC 1000 <span>/day</span></h2>
+                        </div>
+                        <div class="explore_car_info">
+                            <div class="transmission">
+                                <p>20K</p>
+                            </div>
+                            <div class="transmission">
+                                <p>Auto</p>
+                            </div>
+                            <div class="transmission">
+                                <p>Petrol</p>
+                            </div>
+                        </div>
+                        <div class="explore_book">
+                            <button>
+                                <a href="#">MAKE RESERVATION</a>
                             </button>
                         </div>
                     </div>
@@ -347,17 +373,16 @@
     <section>
         <div class="why_all">
             <div class="why_text">
-                <h1>WHY CHOOSE US - XPRESS CAR RENTALS</h1>
+                <h1>WHY CHOOSE US - Ogazy CAR RENTALS</h1>
                 <p>
-                    Xpress Car Rental stands out for its commitment to providing customers with exceptional service and a seamless
-                    rental experience. With a wide selection of vehicles ranging from economy cars to luxury SUVs, Xpress Car Rental
-                    caters to diverse needs and preferences.Their efficient booking process, transparent pricing, and flexible rental options make them a preferred choice for
-                    travelers seeking reliability and convenience.
+                    Dynamically unleash market positioning convergence for scalable infrastructure Rapidly virtual infrastructures rather than market-driven items. without resourceleveling process improvement.
+                    Dynamically unleash market positioning convergence for scalable infrastructure Rapidly virtual infrastructures rather than market-driven items. without resourceleveling process improvement.
+
                 </p>
                 <p>
-                    Moreover, Xpress Car Rental prioritizes customer satisfaction, ensuring that each vehicle
-                    is well-maintained and equipped with the latest safety features, providing peace of mind to renters. Whether for business trips or leisure travel, choosing
-                    Xpress Car Rental guarantees a stress-free and enjoyable journey.
+                    Dynamically unleash market positioning convergence for scalable infrastructure Rapidly virtual infrastructures rather than market-driven items. without resourceleveling process improvement.
+                    Dynamically unleash market positioning convergence for scalable infrastructure Rapidly virtual infrastructures rather than market-driven items. without resourceleveling process improvement.
+
                 </p>
             </div>
             <div class="why_images">
@@ -376,11 +401,10 @@
                     <h1>Call</h1>
                     <p>0209855332 </p>
                     <p>0246046910</p>
-
                 </div>
                 <div class="box">
                     <h1>Mail</h1>
-                    <p>info@xpresscarrental.com</p>
+                    <p>info@Ogazycarrental.com</p>
                 </div>
                 <div class="box">
                     <h1>Location</h1>
@@ -388,7 +412,7 @@
                 </div>
             </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.6902498864156!2d-1.6116283999999998!3d6.6852385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb970a7421c4ef%3A0x7a3c86745ca8b5ba!2sXpress%20Car%20Rental!5e0!3m2!1sen!2sgh!4v1710843757766!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8115589.631767379!2d-11.3674878!3d6.6852385!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb970a7421c4ef%3A0x7a3c86745ca8b5ba!2sOgazy%20Car%20Rental!5e0!3m2!1sen!2sgh!4v1710518362733!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>

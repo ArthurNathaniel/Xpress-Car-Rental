@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Xpress Car Rental</title>
+    <title>Terms - Xpress Car Rental</title>
     <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -15,7 +15,7 @@
     <?php include 'navbar.php'; ?>
     <section>
         <div class="hero_bg">
-            <h5>XPRESS CAR RENTAL</h5>
+            <h5>Xpress CAR RENTAL</h5>
             <h1>Terms & Condition</h1>
         </div>
     </section>

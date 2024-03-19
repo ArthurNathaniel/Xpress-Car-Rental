@@ -133,6 +133,7 @@ footer p {
 .hero_bg h5 {
     color: rgb(240, 197, 65);
     text-align: center;
+    text-transform: uppercase;
 }
 
 .hero_bg h1 {

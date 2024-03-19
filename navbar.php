@@ -13,8 +13,8 @@
     <div class="nav_links">
         <a href="index.php">Home</a>
         <a href="about.php">About</a>
-        <a href="#">Services</a>
-        <a href="#">Reservation</a>
+        <!-- <a href="#">Services</a> -->
+        <a href="reservation.php">Reservation</a>
         <a href="terms.php">Terms</a>
         <a href="contact.php">Contact </a>
     </div>
@@ -25,8 +25,8 @@
     <div class="mobile">
         <a href="index.php">Home</a>
         <a href="about.php">About</a>
-        <a href="#">Services</a>
-        <a href="#">Reservation</a>
+        <!-- <a href="#">Services</a> -->
+        <a href="reservation.php">Reservation</a>
         <a href="terms.php">Terms</a>
         <a href="contact.php">Contact </a>
     </div>
