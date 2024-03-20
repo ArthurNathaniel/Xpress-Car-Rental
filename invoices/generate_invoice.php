@@ -5,8 +5,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $customer_name = $_POST["customer_name"];
     $contact_no = $_POST["contact_no"];
     $services = $_POST["services"];
-    $day = $_POST["day"];
-    $price = $_POST["price"];
+    $days = $_POST["day"]; // changed to plural form
+    $prices = $_POST["price"]; // changed to plural form
     $payment_info = $_POST["payment_info"];
 
     // Generate invoice number (You can implement your own logic here)
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = "root";
     $password = "";
     $dbname = "car_rental";
- 
+
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -28,10 +28,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Prepare and bind the INSERT statement
     $stmt = $conn->prepare("INSERT INTO invoices (invoice_no, customer_name, contact_no, services, day, price, payment_info) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssss", $invoice_no, $customer_name, $contact_no, $services, $day, $price, $payment_info);
 
-    // Execute the statement
-    $stmt->execute();
+    // Bind parameters
+    $stmt->bind_param("sssssss", $invoice_no, $customer_name, $contact_no, $service, $day, $price, $payment_info);
+
+    // Insert each service into the database
+    for ($i = 0; $i < count($services); $i++) {
+        $service = $services[$i];
+        $day = $days[$i];
+        $price = $prices[$i];
+
+        // Execute the statement
+        $stmt->execute();
+    }
 
     // Close statement and connection
     $stmt->close();

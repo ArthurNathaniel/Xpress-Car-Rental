@@ -1,0 +1,165 @@
+.about_all{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 0 10%;
+}
+
+.about_text{
+    margin-left: 10%;
+    padding-block: 70px;
+}
+
+.about_text p{
+    margin-top: 10px;
+}
+
+.about_img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_img img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.normal_all{
+    padding: 0 10%;
+    margin-block:70px ;
+}
+
+.normal_title h1{
+    font-size: 50px;
+    color: rgb(240, 197, 65);
+    margin-bottom: 10px;
+}
+
+.normal_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.normal_image{
+    width: 95%;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.normal_image img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.packages_all_grid{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.packages_all_box{
+    width: 90%;
+    height: 300px;
+    border: 2px dotted;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration_all{
+    padding: 0 10%;
+    padding-block: 70px;
+}
+
+.register_title h1{
+    color: rgb(240, 197, 65);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.forms input {
+    height: 50px;
+    padding-left: 2%;
+    border: 1px solid #a19f9f4e;
+}
+
+.forms select{
+   
+    height: 50px;
+    padding-left: 2%;
+    border: 1px solid #a19f9f4e;
+}
+
+.forms button{
+    background-color: #2a4047;
+    height: 50px;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+}
+
+.forms input:focus{
+    outline: none;
+}
+
+.forms select:focus {
+    outline: none;
+}
+
+
+.forms button {
+    background-color: rgb(240, 197, 65);
+    height: 50px;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+}
+
+.forms input:focus {
+    outline: none;
+}
+.payment_all{
+    padding: 0 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+.logo_register{
+    width: 250px;
+    height: 150px;
+    border: 2px dotted;
+
+}
+
+.title{
+    margin-block: 20px;
+}
+.title h1{
+    color: #2a4047;
+}
+.payment_all button{
+    margin-top: 30px;
+    background-color: rgb(240, 197, 65);
+    padding: 15px 45px;
+    border-radius:30px;
+    border: none;
+}
+
+.payment_all button a{
+    color: #fff;
+}

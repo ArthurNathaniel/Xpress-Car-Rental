@@ -20,18 +20,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         // Check if the selected car is available for the specified period
-        $sql = "SELECT id FROM bookings WHERE car_id = ? AND ((pickup_date BETWEEN ? AND ?) OR (return_date BETWEEN ? AND ?))";
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param("issss", $car_id, $pickup_date, $return_date, $pickup_date, $return_date);
-        $stmt->execute();
-        $result = $stmt->get_result();
+        // $sql = "SELECT id FROM bookings WHERE car_id = ? AND ((pickup_date BETWEEN ? AND ?) OR (return_date BETWEEN ? AND ?))";
+        // $stmt = $conn->prepare($sql);
+        // $stmt->bind_param("issss", $car_id, $pickup_date, $return_date, $pickup_date, $return_date);
+        // $stmt->execute();
+        // $result = $stmt->get_result();
 
-        if ($result->num_rows > 0) {
-            echo "";
-            echo "<script>alert('The selected car is not available for the specified period.'); window.location.href = 'booking.php';</script>";
+        // if ($result->num_rows > 0) {
+        //     echo "";
+        //     echo "<script>alert('The selected car is not available for the specified period.'); window.location.href = 'booking.php';</script>";
 
-            exit();
-        }
+        //     exit();
+        // }
 
         // Calculate total price based on rental duration and car price
         $sql = "SELECT price FROM cars WHERE id = ?";
@@ -140,7 +140,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     echo "Select Car: <select name='car_id'>";
                     while ($row = $result->fetch_assoc()) {
                         // echo "<option value='" . $row['id'] . "'>" . $row['car_name'] . " (" . $row['model'] . " - " . $row['transmission'] . ")</option>";
-                        echo "<option value='" . $row['id'] . "'>" . $row['car_name'] . " (" . $row['model'] . " - " . $row['transmission'] .  " - " . $row['price'] . ")</option>";
+                        echo "<option value='" . $row['id'] . "'>" . $row['car_name'] . " (" . $row['model'] . " - " . $row['transmission'] .  " - GHC " . $row['price'] ." / per day" .")</option>";
 
                     }
                     echo "</select><br>";

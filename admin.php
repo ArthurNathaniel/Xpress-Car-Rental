@@ -2,13 +2,13 @@
 include 'db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
+    $name = $_POST['car_name'];
     $model = $_POST['model'];
     $transmission = $_POST['transmission'];
     $price = $_POST['price'];
     $color = $_POST['color'];
 
-    $sql = "INSERT INTO cars (name, model, transmission, price, color) VALUES ('$name', '$model', '$transmission', $price, '$color')";
+    $sql = "INSERT INTO cars (car_name, model, transmission, price, color) VALUES ('$name', '$model', '$transmission', $price, '$color')";
     if ($conn->query($sql) === TRUE) {
         echo "<script>alert('New car added successfully');</script>";
     } else {

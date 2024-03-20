@@ -71,30 +71,25 @@ $conn->close();
 
             <table>
                 <tr>
-                    <th>Services</th>
+                    <th>Service</th>
                     <th>Day</th>
                     <th>Price</th>
                     <th>Amount</th>
                 </tr>
-                <tr>
-                    <td><?php echo $row['services']; ?></td>
-                    <td><?php echo $row['day']; ?></td>
-                    <td><?php echo $row['price']; ?></td>
-                    <td><?php echo $row['day'] * $row['price']; ?>.00</td>
-                </tr>
-                <tr>
-                    <td colspan="3" align="right"><strong>Subtotal:</strong></td>
-                    <td><?php echo $row['day'] * $row['price']; ?>.00</td>
-                </tr>
+                <?php for ($i = 0; $i < count($services); $i++) { ?>
+                    <tr>
+                        <td><?php echo $services[$i]; ?></td>
+                        <td><?php echo $days[$i]; ?></td>
+                        <td><?php echo $prices[$i]; ?></td>
+                        <td><?php echo $days[$i] * $prices[$i]; ?>.00</td>
+                    </tr>
+                <?php } ?>
                 <tr>
                     <td colspan="3" align="right"><strong>Total:</strong></td>
-                    <td><?php echo $row['day'] * $row['price']; ?>.00</td> <!-- Total equals the subtotal in this case -->
+                    <td><?php echo $total; ?>.00</td>
                 </tr>
-                <!-- <tr>
-                    <td colspan="3" align="right"><strong>Amount Due:</strong></td>
-                    <td><?php echo $row['price']; ?></td>
-                </tr> -->
             </table>
+
 
 
         </div>

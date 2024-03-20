@@ -3,7 +3,7 @@
 
 <head>
     <title>Car Rental Invoice</title>
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -27,19 +27,17 @@
                 <input type="text" name="customer_name" placeholder="Customer Name"><br>
                 <label for="contact_no">Contact No:</label>
                 <input type="text" name="contact_no" placeholder="Customer Contact No"><br>
-                <label for="services">Services:</label>
-                <input type="text" name="services" placeholder="Services"><br>
-                <label for="day">Day:</label>
-                <input type="text" name="day" placeholder="Number of Days"><br>
-                <label for="price">Price:</label>
-                <input type="text" name="price" placeholder="Price per Day"><br>
-                <label for="payment_info">Payment Info:</label>
-                <input type="text" name="payment_info" placeholder="Payment Info"><br>
+                <label for="services[]">Services:</label>
+                <input type="text" name="services[]" placeholder="Service"><br>
+                <label for="days[]">Day:</label>
+                <input type="text" name="days[]" placeholder="Number of Days"><br>
+                <label for="prices[]">Price:</label>
+                <input type="text" name="prices[]" placeholder="Price per Day"><br>
                 <input type="submit" value="Generate Invoice">
             </form>
+
         </div>
         <div class="payment-info">
-            <!-- Payment Info (default) -->
             Payment Info:<br>
             Bank Name: XYZ Bank<br>
             Account Number: XXXXXXX<br>
