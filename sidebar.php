@@ -7,7 +7,8 @@
         <a href="./admin.php" class="ll"><i class="fas fa-plus"></i> Add Car</a>
         <a href="./delete_car.php"><i class="fas fa-trash"></i>Delete Car</a>
         <a href="./view_booked_cars.php"><i class="fas fa-list"></i> Booked Cars</a>
-        <a href="">Clients Details</a>
+        <a href="./client_details.php">Client Details</a>
+        <a href="view_client_details.php">View Client Details</a>
         <a href="./create_invoice.php">Create an Invoice</a>
         <a href="./single.php">View all Invoice</a>
         <h3>DRIVING SCHOOL</h3>

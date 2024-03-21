@@ -1,15 +1,17 @@
 .admin_all {
     padding: 0 5%;
 }
-form{
-display: flex;
-flex-direction: column;
+
+form {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: center;
     /* height: 100vh; */
     width: 100%;
 }
+
 .forms {
     width: 100%;
     display: flex;
@@ -23,38 +25,74 @@ flex-direction: column;
     padding-left: 2%;
 }
 
-.forms select{
+.forms select {
     height: 50px;
-        border: 2px solid #a19f9f4e;
-        padding-left: 1.5%;
+    border: 2px solid #a19f9f4e;
+    padding-left: 1.5%;
 }
 
-.forms button{
+.forms button {
     height: 50px;
     background-color: #2a4047;
     color: #fff;
     border: none;
 }
 
-.forms input:focus{
-    outline: none;
-}
-.forms select:focus{
+.forms input:focus {
     outline: none;
 }
 
-.delete_all{
+.forms select:focus {
+    outline: none;
+}
+
+.delete_all {
     padding: 0 5%;
 }
 
-#desired_location_input{
-width: 100%;
-padding: 0 5%;
-margin-bottom: 20px;
+#desired_location_input {
+    width: 100%;
+    padding: 0 5%;
+    margin-bottom: 20px;
 }
 
-#desired_location_input input{
+#desired_location_input input {
     height: 50px;
     width: 100%;
     padding-left: 2%;
+}
+.clients_all_title{
+    margin-top: 50px;
+}
+.clients_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 100%;
+}
+
+.clients_forms {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.clients_forms input {
+    height: 50px;
+    border: 2px solid #a19f9f4e;
+    padding-left: 2%;
+}
+
+.clients_forms input:focus{
+    outline: none;
+}
+
+.clients_forms button{
+    height: 50px;
+        background-color: #2a4047;
+        color: #fff;
+        border: none;
+        text-transform: uppercase;
+        margin-bottom: 70px;
 }

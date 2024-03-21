@@ -44,6 +44,7 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Xpress Car Rental</title>
+    <?php include 'cdn.php'; ?>
     <!-- Include any CSS files here -->
     <link rel="stylesheet" href="./css/sidebar.css">
     <link rel="stylesheet" href="./css/login.css">

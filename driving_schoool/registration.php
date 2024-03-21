@@ -1,20 +1,6 @@
 <?php
 // Establish database connection
-// $host = "localhost";
-// $username = "root";
-// $password = "";
-// $database = "car_rental";
-$host = "longwellconnect.com";
-$username = "u500921674_xpress";
-$password = "OnGod@123";
-$database = "u500921674_xpress";
-
-$conn = mysqli_connect($host, $username, $password, $database);
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
+include 'db.php';
 // Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
@@ -103,10 +89,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label>Packages:</label>
                     <select name="package" required>
                         <option value="" selected hidden> Select Packages</option>
-                        <option value="package_one">Package One</option>
-                        <option value="package_two">Package Two</option>
-                        <option value="package_three">Package Three</option>
-                        <option value="package_four">Package Four</option>
+                        <option value="Regular without license - 6 weeks">Regular without license - 6 Weeks</option>
+                        <option value="Regular with standard license - 6 weeks">Regular with standard license - 6 weeks</option>
+                        <option value="Regular with premium license - 6 weeks">Regular with premium license - 6 weeks</option>
+                        <option value="Express without license - 3 weeks">Express without license - 3 weeks</option>
                     </select>
                 </div>
 
