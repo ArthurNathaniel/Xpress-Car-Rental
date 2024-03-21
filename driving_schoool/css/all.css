@@ -1,88 +1,90 @@
-.about_all{
+.about_all {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     padding: 0 10%;
 }
 
-.about_text{
+.about_text {
     margin-left: 10%;
     padding-block: 70px;
 }
 
-.about_text p{
+.about_text p {
     margin-top: 10px;
 }
 
-.about_img{
+.about_img {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about_img img{
+.about_img img {
     width: 100%;
     height: 600px;
     object-fit: cover;
     border-radius: 30px;
 }
 
-.normal_all{
+.normal_all {
     padding: 0 10%;
-    margin-block:70px ;
+    margin-block: 70px;
 }
 
-.normal_title h1{
+.normal_title h1 {
     font-size: 50px;
     color: rgb(240, 197, 65);
     margin-bottom: 10px;
 }
 
-.normal_grid{
+.normal_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.normal_image{
+.normal_image {
     width: 95%;
     height: 300px;
     margin-top: 50px;
 }
 
-.normal_image img{
+.normal_image img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-.packages_all_grid{
-    
+.packages_all_grid {
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.packages_all_box{
+.packages_all_box {
+    padding-top: 30px;
+    padding-bottom: 50px;
     width: 90%;
-    height: 300px;
-    border: 2px dotted;
     margin-top: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.registration_all{
+.registration_all {
     padding: 0 10%;
     padding-block: 70px;
 }
 
-.register_title h1{
+.register_title h1 {
     color: rgb(240, 197, 65);
     font-size: 50px;
     margin-bottom: 20px;
 }
 
-.forms{
+.forms {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
@@ -94,14 +96,14 @@
     border: 1px solid #a19f9f4e;
 }
 
-.forms select{
-   
+.forms select {
+
     height: 50px;
     padding-left: 2%;
     border: 1px solid #a19f9f4e;
 }
 
-.forms button{
+.forms button {
     background-color: #2a4047;
     height: 50px;
     color: #fff;
@@ -109,7 +111,7 @@
     text-transform: uppercase;
 }
 
-.forms input:focus{
+.forms input:focus {
     outline: none;
 }
 
@@ -129,7 +131,8 @@
 .forms input:focus {
     outline: none;
 }
-.payment_all{
+
+.payment_all {
     padding: 0 10%;
     height: 100vh;
     display: flex;
@@ -139,27 +142,87 @@
     align-self: center;
     text-align: center;
 }
-.logo_register{
+
+.logo_register {
     width: 250px;
     height: 150px;
-    border: 2px dotted;
+    background-image: url(../images/logo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
-.title{
+.title {
     margin-block: 20px;
 }
-.title h1{
+
+.title h1 {
     color: #2a4047;
 }
-.payment_all button{
+
+.payment_all button {
     margin-top: 30px;
     background-color: rgb(240, 197, 65);
     padding: 15px 45px;
-    border-radius:30px;
+    border-radius: 30px;
     border: none;
 }
 
-.payment_all button a{
+.payment_all button a {
     color: #fff;
+}
+
+.normal_title button {
+    padding: 15px 45px;
+    background-color: rgb(240, 197, 65);
+    margin-top: 30px;
+    border: none;
+    border-radius: 30px;
+}
+
+.normal_title button a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1110px) {
+
+    .about_all {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_img {
+        margin-top: 50px;
+    }
+
+    .about_text {
+        margin: 0;
+    }
+
+    .normal_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .packages_all_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .packages_all_box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .normal_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .normal_image {
+        width: 100%;
+    }
 }

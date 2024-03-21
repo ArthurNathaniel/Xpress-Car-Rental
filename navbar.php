@@ -11,7 +11,7 @@
 <div class="navbar_all">
     <div class="logo"></div>
     <div class="nav_links">
-        <a href="index.php">Home</a>
+        <a href="home.php">Home</a>
         <a href="about.php">About</a>
         <!-- <a href="#">Services</a> -->
         <a href="reservation.php">Reservation</a>
@@ -23,7 +23,7 @@
         <i class="fa-solid fa-bars-staggered"></i>
     </button>
     <div class="mobile">
-        <a href="index.php">Home</a>
+        <a href="home.php">Home</a>
         <a href="about.php">About</a>
         <!-- <a href="#">Services</a> -->
         <a href="reservation.php">Reservation</a>

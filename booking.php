@@ -128,7 +128,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if ($result->num_rows > 0) {
                     echo "Select Car: <select name='car_id'>";
                     while ($row = $result->fetch_assoc()) {
-                        echo "<option value='" . $row['id'] . "'>" . $row['car_name'] . " (" . $row['model'] . " - " . $row['transmission'] .  " - GHC " . $row['price'] . " / per day ". ")</option>";
+                        echo "<option value='" . $row['id'] . "'>" . $row['car_name'] . " (" . $row['model'] . " - " . $row['color'] .  " - GHC " . $row['price'] . " / per day ". ")</option>";
                     }
                     echo "</select><br>";
                 } else {

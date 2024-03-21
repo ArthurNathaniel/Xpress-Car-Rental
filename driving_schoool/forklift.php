@@ -27,6 +27,9 @@
                 <p>
                     Xpress Driving School offers specialized training for forklift operation, focusing on safety, efficiency, and compliance with industry standards. Our program combines classroom instruction with hands-on practice to equip participants with the skills needed for safe and productive forklift operation in industrial settings. Join us and elevate your forklift driving skills with confidence.
                 </p>
+                <button>
+                    <a href="registration.php">Register now!</a>
+                </button>
             </div>
             <div class="normal_grid">
                 <div class="normal_image">

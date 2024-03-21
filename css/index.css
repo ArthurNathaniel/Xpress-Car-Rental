@@ -1,7 +1,8 @@
 .hero_all {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    padding: 0 5%;
+    /* padding: 0 5%; */
+    padding-left: 5%;
     background-image: url(../images/texture-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -335,10 +336,15 @@ margin-top: 10px;
 }
 
 .testimonial_box{
-border: 1px dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2a4047;
+height: 250px;
 padding: 0 5%;
 padding-block: 30px;
 text-align: left;
+color: #fff;
 }
 
 .why_all{

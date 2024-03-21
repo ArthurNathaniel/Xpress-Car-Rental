@@ -30,7 +30,7 @@
     </button>
     <div class="mobile">
         <a href="index.php">Home</a>
-        <a href="">About</a>
+        <a href="about.php">About</a>
         <div class="dropdown">
             <a href="#">Services <span><i class="fa-solid fa-angle-down"></i></span></a>
             <div class="dropdown-content">

@@ -102,7 +102,12 @@
                                 <div class="circle">
 
                                 </div>
-                                <p>Packages One </p>
+                                <p>
+                                    Regular without  license</p>
+                                <span>
+                                    <strong>Duration:</strong>
+                                    6 weeks
+                                </span>
                                 <div class="cicle_btn">
                                     <a href="registration.php">Register now <span><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
@@ -114,7 +119,12 @@
                                 <div class="circle">
 
                                 </div>
-                                <p>Packages Two </p>
+                                <p>
+                                    Regular with standard license</p>
+                                <span>
+                                    <strong>Duration:</strong>
+                                    6 weeks
+                                </span>
                                 <div class="cicle_btn">
                                     <a href="registration.php">Register now <span><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
@@ -126,7 +136,12 @@
                                 <div class="circle">
 
                                 </div>
-                                <p>Packages Three </p>
+                                <p>
+                                    Regular with premium license</p>
+                                <span>
+                                    <strong>Duration:</strong>
+                                    6 weeks
+                                </span>
                                 <div class="cicle_btn">
                                     <a href="registration.php">Register now <span><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
@@ -138,7 +153,12 @@
                                 <div class="circle">
 
                                 </div>
-                                <p>Packages Four </p>
+                                <p>
+                                    Express without license </p>
+                                <span>
+                                    <strong>Duration:</strong>
+                                    3 weeks
+                                </span>
                                 <div class="cicle_btn">
                                     <a href="registration.php">Register now <span><i class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
@@ -167,7 +187,7 @@
                 </div>
                 <div class="box">
                     <h1>Mail</h1>
-                    <p>info@xpresscarrental.com</p>
+                    <p>driving@xpresscarrentalanddrivingschool.com</p>
                 </div>
                 <div class="box">
                     <h1>Location</h1>

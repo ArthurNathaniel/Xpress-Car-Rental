@@ -27,6 +27,9 @@
                 <p>
                     At Xpress Driving School, we're committed to teaching more than just the basics of operating a vehicle. We focus on instilling a deep understanding of road safety, traffic laws, and defensive driving techniques. Through our comprehensive curriculum and expert instructors, we empower students to navigate everyday driving scenarios confidently and responsibly. Join us in shaping the next generation of skilled and safe drivers.
                 </p>
+                <button>
+                    <a href="registration.php">Register now!</a>
+                </button>
             </div>
             <div class="normal_grid">
                 <div class="normal_image">

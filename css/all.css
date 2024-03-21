@@ -1,0 +1,122 @@
+body {
+    background-color: #f2f2f8;
+}
+
+.all {
+    padding: 0 10%;
+    width: 100%;
+    padding-block: 20px;
+}
+
+.all_logo {
+    width: 300px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../driving_schoool/images/logo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.heading {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.all_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.all_box {
+    border-radius: 30px;
+    margin-top: 50px;
+    width: 90%;
+    padding: 0 5%;
+    padding-block: 50px;
+    background-color: #fff;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.all_box button {
+    height: 50px;
+    margin-top: 30px;
+    width: 100%;
+    border: none;
+    background-color: rgb(240, 197, 65);
+    border-radius: 30px;
+}
+
+.all_box a button {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+}
+
+.all_box button span {
+    padding-left: 20px;
+}
+
+.all_box h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.contact_information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.call_information {
+    display: flex;
+    flex-direction: column;
+}
+
+.call_information a {
+    color: #000;
+    padding-top: 20px;
+}
+
+.call_information i {
+    color: rgb(240, 197, 65);
+    padding-right: 20px;
+}
+
+.whatsapp_information a {
+    color: #000;
+}
+
+.whatsapp_information i {
+    color: green;
+    padding-right: 20px;
+}
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width: 1110px) {
+    .all_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .all_box {
+        width: 100%;
+    }
+
+    .contact_information {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .call_information {
+        margin-bottom: 30px;
+    }
+}

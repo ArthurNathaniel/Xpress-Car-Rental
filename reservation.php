@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Validate pickup and return dates (e.g., check if return date is after pickup date)
         if ($pickup_date >= $return_date) {
             echo "Return date must be after pickup date.";
-            
+
             exit();
         }
 
@@ -78,8 +78,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Make your car rental reservation with ease at Xpress Car Rental. Conveniently located at Asafo, Near Ahmadiyya Mosque. Reserve your vehicle online today.">
+    <meta name="keywords" content="car rental reservation, Xpress Car Rental, vehicle rental, online reservation, Asafo, Ahmadiyya Mosque, Reservation">
+    <meta name="author" content="Xpress Car Rental">
     <title>Reservation - Xpress Car Rental</title>
     <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="./css/base.css">
@@ -140,8 +142,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     echo "Select Car: <select name='car_id'>";
                     while ($row = $result->fetch_assoc()) {
                         // echo "<option value='" . $row['id'] . "'>" . $row['car_name'] . " (" . $row['model'] . " - " . $row['transmission'] . ")</option>";
-                        echo "<option value='" . $row['id'] . "'>" . $row['car_name'] . " (" . $row['model'] . " - " . $row['transmission'] .  " - GHC " . $row['price'] ." / per day" .")</option>";
-
+                        echo "<option value='" . $row['id'] . "'>" . $row['car_name'] . " (" . $row['model'] . " - " . $row['transmission'] .  " - GHC " . $row['price'] . " / per day" . ")</option>";
                     }
                     echo "</select><br>";
                 } else {

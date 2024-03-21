@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+.create_invoice_all {
+    margin-top: 70px;
+    padding: 0 10%;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms input {
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+.forms button {
+    height: 50px;
+    width: 23%;
+    border: none;
+    background-color: #feda08;
+    color: #fff;
+}
+
+td input {
+    height: 50px;
+    width: 100%;
+
+}
+
+td button {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(240, 7, 7);
+    color: #fff;
+    border: none;
+
+}
+
+.add button {
+    margin-block: 30px;
+    height: 50px;
+    width: 23%;
+    background-color: #feda08;
+    color: #fff;
+    border: none;
+}
+
+  .invoice-container {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+  }
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+
+  table,
+  th,
+  td {
+      border: 1px solid #ccc;
+      padding: 8px;
+  }
+
+  th {
+      background-color: #feda08;
+      color: #fff;
+  }
+
+  .invoice_navbar {
+      background-color: #feda08;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10%;
+  }
+
+  .logo_invoice {
+      width: 250px;
+      height: 100px;
+      background-image: url(../driving_schoool/images/logo.jpeg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .last_footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #feda08;
+    padding: 0 10%;
+        padding-block: 30px;
+        margin-top: 70px;
+        color: #091a2e;
+  }
+
+  .whole_invoice{
+    padding: 0 10%;
+    margin-top: 30px;
+  }
+
+  .about_aall{
+    padding: 0 10%;
+    margin-top: 50px;
+  }
+
+   .all__grid {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       padding: 0 10%;
+       margin-top: 50px;
+   }
+
+   .invoice-container {
+       margin-bottom: 20px;
+       padding: 0 5%;
+       padding-block: 50px;
+       display: grid;
+       width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+   }
+
+   .invoice-container button {
+       border: none;
+       width: 100%;
+       height: 50px;
+       margin-top: 40px;
+       background-color:#feda08 ;
+   }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                /* For Chrome and Safari */
+                background-color: #ffffff;
+                /* Set the background color */
+            }
+    
+            /* Add more styles for printing as needed */
+            /* For example, you might want to adjust font colors and sizes for better readability when printed */
+        }

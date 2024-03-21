@@ -30,16 +30,52 @@
             </div>
             <div class="packages_all_grid">
                 <div class="packages_all_box">
-                    <h1>Package One</h1>
+                    <div class="circle"></div>
+                    <p>
+                        Regular without license </p>
+                    <span>
+                        <strong>Duration:</strong>
+                        6 weeks
+                    </span>
+                    <div class="cicle_btn">
+                        <a href="registration.php">Register now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    </div>
                 </div>
                 <div class="packages_all_box">
-                    <h1>Package Two</h1>
+                    <div class="circle"></div>
+                    <p>
+                        Regular with standard license </p>
+                    <span>
+                        <strong>Duration:</strong>
+                        6 weeks
+                    </span>
+                    <div class="cicle_btn">
+                        <a href="registration.php">Register now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    </div>
                 </div>
                 <div class="packages_all_box">
-                    <h1>Package Three</h1>
+                    <div class="circle"></div>
+                    <p>
+                        Regular with premium license </p>
+                    <span>
+                        <strong>Duration:</strong>
+                        6 weeks
+                    </span>
+                    <div class="cicle_btn">
+                        <a href="registration.php">Register now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    </div>
                 </div>
                 <div class="packages_all_box">
-                    <h1>Package Four</h1>
+                    <div class="circle"></div>
+                    <p>
+                        Express without license </p>
+                    <span>
+                        <strong>Duration:</strong>
+                        3 weeks
+                    </span>
+                    <div class="cicle_btn">
+                        <a href="registration.php">Register now <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                    </div>
                 </div>
             </div>
         </div>

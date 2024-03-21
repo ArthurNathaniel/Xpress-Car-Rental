@@ -1,4 +1,12 @@
 <?php
+
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit;
+}
+
 include 'db.php';
 
 // Delete car if delete button is clicked
@@ -40,6 +48,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['edit_car'])) {
     <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="../css/sidebar.css">
     <link rel="stylesheet" href="../css/admin.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .delete_all {
+            margin-top: 50px;
+        }
+    </style>
 </head>
 
 <body>

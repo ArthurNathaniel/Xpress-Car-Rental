@@ -1,19 +1,20 @@
 <?php
 // Establish database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "car_rental";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "car_rental";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+// $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
+// // Check connection
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// }
+include 'db.php';
 // Retrieve invoices from database
-$sql = "SELECT * FROM invoices";
+// $sql = "SELECT * FROM invoices";
+$sql = "SELECT * FROM invoices ORDER BY id DESC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

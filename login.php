@@ -1,4 +1,5 @@
 <?php
+session_start(); // Start the session
 include 'db.php';
 // If the form is submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

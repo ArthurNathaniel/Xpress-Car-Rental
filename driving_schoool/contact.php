@@ -34,7 +34,7 @@
                 </div>
                 <div class="box">
                     <h1>Mail</h1>
-                    <p>info@xpresscarrental.com</p>
+                    <p>driving@xpresscarrentalanddrivingschool.com</p>
                 </div>
                 <div class="box">
                     <h1>Location</h1>

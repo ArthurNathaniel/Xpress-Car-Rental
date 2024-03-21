@@ -1,25 +1,53 @@
-.about_aall{
+.about_aall {
     padding: 0 5%;
     margin-top: 70px;
 }
 
-.about_aall p{
+.about_aall p {
     margin-top: 15px;
 }
-.about_aall h2{
+
+.about_aall h2 {
     margin-top: 20px;
     color: #2a4047
 }
-.about_aall h1{
+
+.about_aall h1 {
     text-transform: uppercase;
     color: #2a4047
 }
 
-.about_aall ol{
+.about_aall ol {
     padding-left: 30px;
     margin-top: 20px;
 }
 
-.about_aall li{
+.about_aall li {
     margin-top: 10px;
+}
+
+.abbb_all {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 0 5%;
+    margin-top: 70px;
+}
+
+.abbb_img {
+    width: 100%;
+
+}
+
+.abbb_img img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.abb_text {
+    margin-left: 10%;
+}
+
+.abb_text p {
+    margin-top: 30px;
 }

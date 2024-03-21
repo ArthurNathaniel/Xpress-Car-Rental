@@ -178,17 +178,28 @@
     height: 150px;
     border-radius: 50%;
     background-color: #2a4047;
+    background-color: rgb(240, 197, 65);
     margin: auto;
     margin-bottom: 30px;
+    background-image: url(../images/logo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.packages_box p {
+.packages_box span {
     margin-bottom: 40px;
+}
+.packages_box{
+    text-align: center;
+}
+.cicle_btn{
+    margin-top: 30px;
+    text-align: center;
 }
 
 .cicle_btn a {
     padding: 15px 45px;
-
     background-color: rgb(240, 197, 65);
     border-radius: 30px;
     color: #fff;
@@ -218,7 +229,7 @@
 }
 
 .box {
-    width: 90%;
+    width: 95%;
     background-color: rgb(240, 197, 65);
     padding: 0 5%;
     padding-block: 30px;
@@ -246,4 +257,35 @@ footer {
     padding-block: 20px;
     text-align: center;
     color: #fff;
+}
+
+@media only screen and (max-width: 1110px) {
+    .hero_btn{
+display: flex;
+flex-direction: column;
+    }
+
+    .services_grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .services_box{
+        width: 100%;
+    }
+
+    .contact_boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 810px) {
+    .contact_boxes {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
 }

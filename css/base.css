@@ -49,8 +49,10 @@ body {
 .logo {
     height: 75px;
     width: 150px;
-    border: 2px dotted;
-}
+background-image: url(../driving_schoool/images/logo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;}
 
 .nav_links a {
     padding: 15px;
@@ -155,7 +157,7 @@ footer p {
 
     .header_all {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
 
 

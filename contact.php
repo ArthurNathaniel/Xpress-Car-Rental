@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Xpress Car Rental</title>
+    <meta name="description" content="Get in touch with Xpress Car Rental for all your car rental inquiries and needs. Contact us at Asafo, Near Ahmadiyya Mosque. We're here to assist you with any questions you may have.">
+    <meta name="keywords" content="car rental, Xpress Car Rental, vehicle rental, contact us, Asafo, Ahmadiyya Mosque, inquiries">
+    <meta name="author" content="Xpress Car Rental">
+    <title>Contact Us - Xpress Car Rental</title>
     <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">

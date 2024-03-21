@@ -1,19 +1,31 @@
 <?php
+
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit;
+}
+
+
+
 include 'db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['car_name'];
-    $model = $_POST['model'];
-    $transmission = $_POST['transmission'];
-    $price = $_POST['price'];
-    $color = $_POST['color'];
+$name = $_POST['car_name'];
+$model = $_POST['model'];
+$transmission = $_POST['transmission'];
+$price = $_POST['price'];
+$color = $_POST['color'];
 
-    $sql = "INSERT INTO cars (car_name, model, transmission, price, color) VALUES ('$name', '$model', '$transmission', $price, '$color')";
-    if ($conn->query($sql) === TRUE) {
-        echo "<script>alert('New car added successfully');</script>";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
+$sql = "INSERT INTO cars (car_name, model, transmission, price, color) VALUES ('$name', '$model', '$transmission', $price, '$color')";
+if ($conn->query($sql) === TRUE) {
+echo "<script>
+    alert('New car added successfully');
+</script>";
+} else {
+echo "Error: " . $sql . "<br>" . $conn->error;
+}
 }
 ?>
 
@@ -52,8 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <select name="transmission" required>
                     <option value="" disabled selected hidden>Select transmission type</option>
 
-                    <option value="automatic">Automatic</option>
-                    <option value="manual">Manual</option>
+                    <option value="Automatic">Automatic</option>
+                    <option value="Manual">Manual</option>
                 </select>
             </div>
             <div class="forms">

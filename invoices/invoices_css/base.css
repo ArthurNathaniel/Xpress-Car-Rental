@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+.create_invoice_all {
+    margin-top: 70px;
+    padding: 0 10%;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms input {
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+.forms button {
+    height: 50px;
+    width: 23%;
+    border: none;
+    background-color: rgb(57, 131, 75);
+    color: #fff;
+}
+
+td input {
+    height: 50px;
+    width: 100%;
+
+}
+
+td button {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(240, 7, 7);
+    color: #fff;
+    border: none;
+
+}
+
+.add button {
+    margin-block: 30px;
+    height: 50px;
+    width: 23%;
+    background-color: rgb(57, 131, 75);
+    color: #fff;
+    border: none;
+}

@@ -39,18 +39,24 @@
         <h2>Booked Cars</h2>
         <table>
             <tr>
-                <th>Booking ID</th>
+                <!-- <th>Booking ID</th> -->
                 <th>Car Name</th>
                 <th>Model</th>
                 <th>Transmission</th>
                 <th>Color</th>
                 <th>Pickup Date</th>
                 <th>Return Date</th>
-                <th>Booking Name</th>
+                <!-- <th>Booking Name</th>
                 <th>Phone Number</th>
-                <th>Email Address</th>
+                <th>Email Address</th> -->
             </tr>
             <?php
+            session_start();
+
+            if (!isset($_SESSION['username'])) {
+                header("Location: login.php");
+                exit;
+            }
             include 'db.php';
             $sql = "SELECT bookings.id, cars.car_name, cars.model, cars.transmission, cars.color, bookings.pickup_date, bookings.return_date, bookings.name, bookings.phone,bookings.email
                 FROM bookings 
@@ -60,16 +66,16 @@
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     echo "<tr>";
-                    echo "<td>" . $row["id"] . "</td>";
+                    // echo "<td>" . $row["id"] . "</td>";
                     echo "<td>" . $row["car_name"] . "</td>";
                     echo "<td>" . $row["model"] . "</td>";
                     echo "<td>" . $row["transmission"] . "</td>";
                     echo "<td>" . $row["color"] . "</td>";
                     echo "<td>" . $row["pickup_date"] . "</td>";
                     echo "<td>" . $row["return_date"] . "</td>";
-                    echo "<td>" . $row["name"] . "</td>";
-                    echo "<td>" . $row["phone"] . "</td>";
-                    echo "<td>" . $row["email"] . "</td>"; // Fixed typo here
+                    // echo "<td>" . $row["name"] . "</td>";
+                    // echo "<td>" . $row["phone"] . "</td>";
+                    // echo "<td>" . $row["email"] . "</td>"; 
                     echo "</tr>";
                 }
             } else {
