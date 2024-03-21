@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn forklift operation with Xpress Driving School's professional instructors. Our forklift training program is designed to provide you with the skills and knowledge needed to operate forklifts safely and efficiently. Located at Asafo, Near Ahmadiyya Mosque.">
+    <meta name="keywords" content="forklift driving, forklift training, forklift operation, driving lessons, Xpress Driving School, Asafo, Ahmadiyya Mosque">
+    <meta name="author" content="Xpress Driving School">
+    <title>Forklift Driving - Xpress Driving School</title>
     <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">

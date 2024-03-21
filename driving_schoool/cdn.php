@@ -9,3 +9,6 @@
 
     <!-- Fancybox JavaScript file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <link rel="icon" href="./images/logo.jpeg" sizes="180x180" type="image/jpeg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/logo.jpeg">

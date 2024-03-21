@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn regular vehicle driving with Xpress Driving School's professional instructors. Our driving lessons are designed to help you become a safe and confident driver on the road. Located at Asafo, Near Ahmadiyya Mosque.">
+    <meta name="keywords" content="normal driving, driving lessons, learn to drive, driving instruction, Xpress Driving School, Asafo, Ahmadiyya Mosque">
+    <meta name="author" content="Xpress Driving School">
+    <title>Normal Driving - Xpress Driving School</title>
     <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">

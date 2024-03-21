@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the packages offered by Xpress Driving School. Choose from our range of driving instruction packages tailored to suit your needs, including forklift operation training and regular vehicle driving lessons. Located at Asafo, Near Ahmadiyya Mosque.">
+    <meta name="keywords" content="driving school packages, driving instruction packages, forklift training, normal driving lessons, Xpress Driving School, Asafo, Ahmadiyya Mosque">
+    <meta name="author" content="Xpress Driving School">
+    <title>Packages - Xpress Driving School</title>
     <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">

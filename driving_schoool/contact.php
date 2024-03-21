@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Xpress Driving School for inquiries, registration, or any assistance you may need. Located at Asafo, Near Ahmadiyya Mosque.">
+    <meta name="keywords" content="contact us, driving school contact, driving school inquiries, Xpress Driving School, Asafo, Ahmadiyya Mosque">
+    <meta name="author" content="Xpress Driving School">
+    <title>Contact Us - Xpress Driving School</title>
     <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">

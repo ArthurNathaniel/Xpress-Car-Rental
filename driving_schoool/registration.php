@@ -4,10 +4,10 @@
 // $username = "root";
 // $password = "";
 // $database = "car_rental";
-    $host = "longwellconnect.com";
-    $username = "u500921674_xpress";
-    $password = "OnGod@123";
-    $database = "u500921674_xpress";
+$host = "longwellconnect.com";
+$username = "u500921674_xpress";
+$password = "OnGod@123";
+$database = "u500921674_xpress";
 
 $conn = mysqli_connect($host, $username, $password, $database);
 
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (mysqli_query($conn, $sql)) {
             // Redirect to payment details page
-            
+
             echo "<script>alert('Registration successful! Click OK to see payment details.'); window.location.href = 'payment_details.php';</script>";
 
             exit;
@@ -53,8 +53,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for driving lessons with Xpress Driving School. Sign up for our forklift operation training or regular vehicle driving instruction. Located at Asafo, Near Ahmadiyya Mosque.">
+    <meta name="keywords" content="registration, driving school registration, forklift training registration, driving lesson sign up, Xpress Driving School, Asafo, Ahmadiyya Mosque">
+    <meta name="author" content="Xpress Driving School">
+    <title>Registration - Xpress Driving School</title>
     <?php include 'cdn.php'; ?>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
