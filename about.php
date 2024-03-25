@@ -26,7 +26,7 @@
     <section>
         <div class="abbb_all">
             <div class="abbb_img">
-                <img src="./driving_schoool/images/profile.jpg" alt="">
+                <img src="./driving_schoool/images/ceo.jpeg" alt="">
             </div>
             <div class="abb_text">
                 <h1>Welcome to Xpress Car Rental</h1>

@@ -27,6 +27,15 @@
             <p><strong>Momo Mobile Number:</strong> 0246046910</p>
             <p><strong>Momo Account Name:</strong> IX Xpress Advertising</p>
         </div>
+<br>
+<br>
+        <div class="package_price">
+            <h2>Packages Price</h2>
+            <p>Regular without license - <strong>GHC 2,000.00</strong></p>
+            <p>Regular with standard license - <strong>GHC 2,950.00</strong></p>
+            <p>Regular with premium license - <strong>GHC 3,250.00</strong></p>
+            <p>Express without license - <strong>GHC 2,300.00</strong></p>
+        </div>
         <br>
         <br>
         <p>

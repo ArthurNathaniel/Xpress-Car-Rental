@@ -1,13 +1,13 @@
 <?php
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "car_rental";
+// $host = "localhost";
+// $username = "root";
+// $password = "";
+// $database = "car_rental";
 
-// $host = "longwellconnect.com";
-// $username = "u500921674_xpress";
-// $password = "OnGod@123";
-// $database = "u500921674_xpress";
+$host = "longwellconnect.com";
+$username = "u500921674_xpress";
+$password = "OnGod@123";
+$database = "u500921674_xpress";
 
 $conn = mysqli_connect($host, $username, $password, $database);
 

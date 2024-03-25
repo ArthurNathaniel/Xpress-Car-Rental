@@ -26,7 +26,7 @@
     <section>
         <div class="about_all">
             <div class="about_img">
-                <img src="./images/profile.jpg" alt="">
+                <img src="./images/ceo.jpeg" alt="">
             </div>
             <div class="about_text">
                 <h1>Welcome Message from the CEO</h1>
